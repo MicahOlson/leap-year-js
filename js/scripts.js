@@ -1,3 +1,7 @@
-function isLeapYear() {
-  return false;
+function isLeapYear(year) {
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
