@@ -5,3 +5,15 @@ function isLeapYear(year) {
     return false;
   }
 }
+
+$(document).ready(function() {
+  $(".form-group").submit(function(event) {
+    event.preventDefault();
+    const year = $("#year").val();
+    if (isLeapYear(year)) {
+      $("#result").text(year + " is a leap year.");
+    } else {
+      $("#result").text(year + " is not a leap year.");
+    }
+  })
+})
