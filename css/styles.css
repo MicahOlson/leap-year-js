@@ -1,0 +1,17 @@
+body {
+  margin: 50px 400px 0px 400px;
+  text-align: center;
+}
+
+.container {
+  background-color: lightgray;
+  border-radius: 20px;
+  box-shadow: 5px 10px 8px;
+  margin-bottom: 50px;
+  padding: 10px 0px 10px 0px;
+}
+
+input {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+}
