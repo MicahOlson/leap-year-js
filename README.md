@@ -7,7 +7,7 @@
 This application takes a single input from the user and evaluates whether it is a leap year based on divisibility by 4, 100 and 400. Input not in the format of YYYY will prompt the user to correct the input.  
 
 #### Click the image below to interact with the live application.
-[![Leap Year Checker image](./img/leap-year-app.png)](https://micaholson.github.io/leap-year)
+[![Leap Year Checker image](./img/leap-year-app.png)](https://micaholson.github.io/leap-year-js)
 
 ## Technologies
 * HTML
