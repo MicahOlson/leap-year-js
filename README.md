@@ -1,58 +1,56 @@
-# Leap Year Detector
+# Leap Year Checker
 
-### See if any given year is a leap year.  
-_by Micah Olson_
-
-## Technologies Used
-* HTML5
-* CSS (extended by Bootstrap 4.5.3)
-* JavaScript (extended by jQuery 3.5.1)
+### Check if any given year is a leap year.
+#### _by Micah Olson_
 
 ## Description
-Input and submit any year to see if it is a leap year.
+This application takes a single input from the user and evaluates whether it is a leap year based on divisibility by 4, 100 and 400. Input not in the format of YYYY will prompt the user to correct the input.  
 
-## Setup/Installation Requirements
-* The web page can be viewed [here](https://micaholson.github.io/leap-year). To edit a local copy yourself, follow the instructions below:  
+#### Click the image below to interact with the live application.
+[![Leap Year Checker image](./img/leap-year-app.png)](https://micaholson.github.io/leap-year)
 
-* Use git to clone the project into your local directory of choice ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)):  
-  $ cd ~/\[directory-of-choice\]  
-  $ git clone https[]()://github.com/MicahOlson/leap-year.git  
+## Technologies
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
 
-* Remove all remotes nicknamed 'origin' pointing to my repository:  
-  To view-  
-  $ git remote -v  
+## Setup
+* Clone this repository locally to your computer.
+  ```
+  git clone https://github.com/MicahOlson/leap-year.git
+  ```
 
-  To remove-  
-  $ git remote rm origin  
-* Add new remotes pointing to your repositories of choice:  
-  $ git remote add \[location-nickname\] \[location\]  
+* Navigate into the `leap-year` directory.
+  ```
+  cd leap-year
+  ```
 
-* Open the files in your editor of choice and have fun!
+* Open `index.html` in your default browser.
+  ```
+  open index.html
+  ```
 
 ## Tests
 ```
 Describe: isLeapYear()  
   
-Test: "It returns false for years that are not a leap year"    
-Expect(isLeapYear(1993)).toEqual(false);
+Test: "It returns false for years not divisible by 4"    
+Expect(isLeapYear(2022)).toBe(false);  
   
-Test: "It returns true for years that are divisible by 4"
-Expect(isLeapYear(2004)).toEqual(true);  
+Test: "It returns true for years divisible by 4 but not 100"
+Expect(isLeapYear(2024)).toBe(true);  
   
-Test: "It returns false for years that are divisible by 100"
-Expect(isLeapYear(2100)).toEqual(false);  
-  
-Test: "It returns true for years that are divisible by 400"  
-Expect(isLeapYear(2000)).toEqual(true);
+Test: "It returns false for years divisible by 4 and 100, but not 400"  
+Expect(isLeapYear(2100)).toBe(false);
 ```
 
 ## Known Bugs
 * No known bugs.
-* This project will be under regular development. If you  
-find a bug, please let me know at the email address below. 
 
 ## License
-[GPL](https://choosealicense.com/licenses/gpl-3.0/)
+[MIT License](LICENSE) - Copyright &#169; 2022 Micah L. Olson
 
 ## Contact Information
-Micah L. Olson micah@fakemail.com
+Contact me by [email](mailto:micah.olson@protonmail.com) or at [LinkedIn](https://www.linkedin.com/in/molson-pdx/).
