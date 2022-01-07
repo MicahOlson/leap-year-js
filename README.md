@@ -22,9 +22,9 @@ This application takes a single input from the user and evaluates whether it is 
   git clone https://github.com/MicahOlson/leap-year-js.git
   ```
 
-* Navigate into the `leap-year` directory.
+* Navigate into the `leap-year-js` directory.
   ```
-  cd leap-year
+  cd leap-year-js
   ```
 
 * Open `index.html` in your default browser.
