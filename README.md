@@ -19,7 +19,7 @@ This application takes a single input from the user and evaluates whether it is 
 ## Setup
 * Clone this repository locally to your computer.
   ```
-  git clone https://github.com/MicahOlson/leap-year.git
+  git clone https://github.com/MicahOlson/leap-year-js.git
   ```
 
 * Navigate into the `leap-year` directory.
