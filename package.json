@@ -1,0 +1,42 @@
+{
+  "name": "leap-year",
+  "version": "1.0.0",
+  "description": "Check if any given year is a leap year.",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=development",
+    "lint": "eslint src/js/*.js",
+    "start": "npm run build && webpack-dev-server --open --mode development",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicahOlson/leap-year-js.git"
+  },
+  "keywords": [],
+  "author": "Micah L. Olson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicahOlson/leap-year-js/issues"
+  },
+  "homepage": "https://github.com/MicahOlson/leap-year-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^7.32.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.7",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
