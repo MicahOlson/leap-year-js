@@ -1,21 +1,21 @@
-const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   devtool: "eval-source-map",
   devServer: {
-    port: "auto",
+    static: './dist',
   },
   plugins: [
-    new ESLintPlugin(),
     new CleanWebpackPlugin(),
+    new ESLintPlugin(),
     new HtmlWebpackPlugin({
       title: "Leap Year Checker",
       template: "./src/index.html",
